@@ -21,6 +21,8 @@ github.com/golang/protobuf v1.2.0/go.mod h1:6lQm79b+lXiMfvg/cZm0SGofjICqVBUtrP5y
 github.com/google/go-cmp v0.2.0/go.mod h1:oXzfMopK8JAjlY9xF4vHSVASa0yLyX7SntLO5aqRK0M=
 github.com/google/go-containerregistry v0.0.0-20181122122528-61e4aeff7593 h1:D9TI+RN73U2lWDzCe1lvfnSd9tB7L3EbumbjLwbzAxE=
 github.com/google/go-containerregistry v0.0.0-20181122122528-61e4aeff7593/go.mod h1:yZAFP63pRshzrEYLXLGPmUt0Ay+2zdjmMN1loCnRLUk=
+github.com/google/go-containerregistry v0.0.0-20190426165109-b6d875c30fe7 h1:PhvWzUpCIpN9fcts12z6NV90VYv9POJGkiaLYm8+dQU=
+github.com/google/go-containerregistry v0.0.0-20190426165109-b6d875c30fe7/go.mod h1:yZAFP63pRshzrEYLXLGPmUt0Ay+2zdjmMN1loCnRLUk=
 github.com/hpcloud/tail v1.0.0 h1:nfCOvKYfkgYP8hkirhJocXT2+zOD8yUNjXaWfTlyFKI=
 github.com/hpcloud/tail v1.0.0/go.mod h1:ab1qPbhIpdTxEkNHXyeSf5vhxWSCs/tWer42PpOxQnU=
 github.com/jmespath/go-jmespath v0.0.0-20180206201540-c2b33e8439af h1:pmfjZENx5imkbgOkpRUYLnmbU7UEFbjtDA2hxJ1ichM=
