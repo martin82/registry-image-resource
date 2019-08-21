@@ -27,6 +27,7 @@ type Source struct {
 
 	AwsAccessKeyId     string `json:"aws_access_key_id,omitempty"`
 	AwsSecretAccessKey string `json:"aws_secret_access_key,omitempty"`
+	AwsSessionToken    string `json:"aws_session_token,omitempty"`
 	AwsRegion          string `json:"aws_region,omitempty"`
 	AwsRoleArn         string `json:"aws_role_arn,omitempty"`
 
@@ -75,6 +76,9 @@ func (source *Source) AuthenticateToECR() bool {
 	os.Setenv("AWS_ACCESS_KEY_ID", source.AwsAccessKeyId)
 	os.Setenv("AWS_SECRET_ACCESS_KEY", source.AwsSecretAccessKey)
 	os.Setenv("AWS_REGION", source.AwsRegion)
+	if source.AwsSessionToken != "" {
+		os.Setenv("AWS_SESSION_TOKEN", source.AwsSessionToken)
+	}
 	mySession := session.Must(session.NewSession())
 	client := ecr.New(mySession)
 	// If a role arn has been supplied, then assume role and get a new session

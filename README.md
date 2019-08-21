@@ -41,6 +41,10 @@ differences:
   Used to authenticate to ECR repos. Must be specified for ECR repos. 
   Setting these will override `username` and `password`
 
+* `aws_session_token`: *Optional.* 
+  May be used to authenticate to ECR repos, if `aws_access_key_id`, 
+  `aws_secret_access_key` and `aws_region` are also set.
+
 * `aws_role_arn`: *Optional.* If set, then the role will be assumed before 
   authenticating to ECR. **Requires** `aws_access_key_id`, `aws_secret_access_key`
   to be set.
